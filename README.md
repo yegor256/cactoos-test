@@ -41,7 +41,7 @@ Or even simpler:
 
 ```java
 public class Multiplies extends TestEnvelope {
-  MathTest() {
+  Multiplies() {
     super(new Match<>(2 * 2, new EqualTo<>(4)));
   }
 }
