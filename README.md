@@ -26,10 +26,10 @@ Java version required: 1.8+.
 
 ## How to use?
 
-First, you create your first test case:
+First, you create your first test case (class names are verbs):
 
 ```java
-public class MathTest implements TestCase {
+public class Multiplies implements TestCase {
   @Override
   void test() throws Exception {
     new Match<>(2 * 2, new EqualTo<>(4)).test();
@@ -40,7 +40,7 @@ public class MathTest implements TestCase {
 Or even simpler:
 
 ```java
-public class MathTest extends TestEnvelope {
+public class Multiplies extends TestEnvelope {
   MathTest() {
     super(new Match<>(2 * 2, new EqualTo<>(4)));
   }
@@ -55,9 +55,9 @@ public class Tests extends TestEntry {
   @Override
   void test() throws Exception {
     new TestSuite(
-      new MathTest(),
-      new SomeOtherTest(),
-      new AnotherTest()
+      new Multiplies(),
+      new AddsTwoIntegers(),
+      new SubtractsDoubles()
     ).test();
   }
 }
