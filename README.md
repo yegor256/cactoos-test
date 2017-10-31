@@ -2,7 +2,6 @@
 
 **ATTENTION**: It is still just a idea.
 
-**Motivation**.
 We are not happy with
 [Hamcrest](http://hamcrest.org/JavaHamcrest/),
 [AssertJ](http://joel-costigliola.github.io/assertj/), and
@@ -11,7 +10,6 @@ they are procedural and not object-oriented. They do their job,
 but mostly through static methods. This library is
 doing almost exactly the same, but through objects.
 
-**How to use**.
 The library has no dependencies. All you need is this
 (get the latest version [here](https://github.com/yegor256/cactoos-test/releases)):
 
