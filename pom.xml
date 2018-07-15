@@ -72,6 +72,11 @@ SOFTWARE.
         <url>http://www.rultor.com/s/cactoos-test</url>
     </ciManagement>
     <dependencies>
+        <dependency>
+            <groupId>org.cactoos</groupId>
+            <artifactId>cactoos</artifactId>
+            <version>0.36</version>
+        </dependency>
     </dependencies>
     <build>
         <testResources>
@@ -137,7 +142,7 @@ SOFTWARE.
                     <plugin>
                         <groupId>com.qulice</groupId>
                         <artifactId>qulice-maven-plugin</artifactId>
-                        <version>0.17.3</version>
+                        <version>0.17.4</version>
                         <configuration>
                         </configuration>
                     </plugin>
