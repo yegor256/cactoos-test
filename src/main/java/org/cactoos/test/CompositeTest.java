@@ -36,18 +36,18 @@ import org.cactoos.text.TextOf;
  *
  * @since 0.1
  */
-public final class TestSuite implements TestCase {
+public final class CompositeTest implements Test {
 
     /**
      * Test cases.
      */
-    private final Iterable<TestCase> cases;
+    private final Iterable<Test> cases;
 
     /**
      * Ctor.
      * @param cases Test cases
      */
-    public TestSuite(final TestCase... cases) {
+    public CompositeTest(final Test... cases) {
         this(new IterableOf<>(cases));
     }
 
@@ -55,7 +55,7 @@ public final class TestSuite implements TestCase {
      * Ctor.
      * @param cases Test cases
      */
-    public TestSuite(final Iterable<TestCase> cases) {
+    public CompositeTest(final Iterable<Test> cases) {
         this.cases = cases;
     }
 

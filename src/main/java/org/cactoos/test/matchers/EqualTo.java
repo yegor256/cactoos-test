@@ -24,14 +24,14 @@
 
 package org.cactoos.test.matchers;
 
-import org.cactoos.test.Matcher;
+import org.cactoos.test.Expectation;
 
 /**
- * Matcher that check expected item equals actual item.
+ * Expectation that check expected item equals actual item.
  * @param <T> Type of item
  * @since 0.1
  */
-public final class EqualTo<T> implements Matcher<T> {
+public final class EqualTo<T> implements Expectation<T> {
 
     /**
      * Expected item.

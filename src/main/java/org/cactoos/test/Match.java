@@ -37,18 +37,18 @@ public final class Match<T> extends TestEnvelope {
     /**
      * Ctor.
      * @param actual Actual value
-     * @param matcher Value matcher
+     * @param expectation Value expectation
      */
-    public Match(final T actual, final Matcher<T> matcher) {
-        this(() -> actual, matcher);
+    public Match(final T actual, final Expectation<T> expectation) {
+        this(() -> actual, expectation);
     }
 
     /**
      * Ctor.
      * @param actual Actual value
-     * @param matcher Value matcher
+     * @param expectation Value expectation
      */
-    public Match(final Scalar<T> actual, final Matcher<T> matcher) {
-        super(() -> matcher.match(actual.value()));
+    public Match(final Scalar<T> actual, final Expectation<T> expectation) {
+        super(() -> expectation.match(actual.value()));
     }
 }

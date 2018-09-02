@@ -29,18 +29,18 @@ package org.cactoos.test;
  *
  * @since 0.1
  */
-public abstract class TestEnvelope implements TestCase {
+public abstract class TestEnvelope implements Test {
 
     /**
      * Origin test case.
      */
-    private final TestCase origin;
+    private final Test origin;
 
     /**
      * Ctor.
      * @param origin Origin test case
      */
-    public TestEnvelope(final TestCase origin) {
+    public TestEnvelope(final Test origin) {
         this.origin = origin;
     }
 

@@ -29,7 +29,7 @@ package org.cactoos.test;
  *
  * @since 0.1
  */
-public interface TestCase {
+public interface Test {
 
     /**
      * Test.

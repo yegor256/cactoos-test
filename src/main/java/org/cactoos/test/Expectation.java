@@ -25,12 +25,12 @@
 package org.cactoos.test;
 
 /**
- * Matcher.
+ * Expectation.
  *
  * @param <T> Type of item
  * @since 0.1
  */
-public interface Matcher<T> {
+public interface Expectation<T> {
 
     /**
      * Match actual and expected value.

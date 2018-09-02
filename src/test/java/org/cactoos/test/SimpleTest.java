@@ -43,7 +43,7 @@ public final class SimpleTest extends TestEnvelope {
      */
     private SimpleTest() {
         super(
-            new TestSuite(
+            new CompositeTest(
                 new Match<>(
                     2*2,
                     new EqualTo<>(4)
